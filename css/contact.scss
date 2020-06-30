@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,700&display=swap");
+@import "./mediaqueries.scss";
+
+$textcolor: #f9f9eb;
+$blue: #012335;
+$green: #aff68c;
+$color: #AFF68C;
+$size: 12px;
+$time: 1;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: darken($color: $textcolor, $amount: 4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $green;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: $green, $amount: 10);
+}
+.dank-ass-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .row {
+    display: flex;
+  }
+}
+
+.hide-mobile{
+    display: none;
+}
+
+
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin: 0 (-$size / 2);
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: ($size * 1.8) solid $color;
+  animation: blink $time + s infinite;
+  filter: drop-shadow(0 0 ($size * 1.5) $color);
+
+  &.down {
+    transform: rotate(180deg);
+  }
+
+  @for $i from 1 through 18 {
+    &.outer-#{$i} {
+      animation-delay: -($time / 18) * $i + s;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    &.inner-#{$i} {
+      animation-delay: -($time / 6) * $i + s;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002335;
+  transition: opacity .5s ease;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  background-color: #012335;
+  font-family: "Montserrat", sans-serif;
+  color: #f9f9eb;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 2em 2em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $textcolor;
+  }
+  
+  .logo {
+    width: 45px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+  
+    .logo {
+      transform: scaleX(1);
+      transition: transform 0.2s ease-in;
+    }
+  
+    .logo:hover {
+      transform: scaleX(-1);
+      transition: transform 0.2s ease-in-out;
+      transition-delay: 0.2s;
+    }
+  
+    nav ul {
+      display: flex;
+      padding: 0.5em;
+      color: $textcolor;
+  
+      .project:hover {
+        color: $green;
+        font-weight: bold;
+        transition: color 0.2s ease-in;
+      }
+  
+      li {
+        float: left;
+        padding: 0.3em;
+        padding-right: 0.8em;
+        padding-left: 0.8em;
+  
+        .contact {
+          color: $green;
+          font-weight: bold;
+        }
+      }
+  
+      li:last-child {
+        color: $green;
+        border: 2px solid;
+        border-radius: 20px;
+      }
+  
+      li:last-child{
+        background-color: $green;
+        transition: background-color 0.2s ease-in;
+        .contact {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  .bg-contact{
+      position: absolute;
+      opacity: 40%;
+      width: 240px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 130px;
+      z-index: -1;
+  }
+
+  .bg-contact-btm{
+    opacity: 40%;
+    width: 180px;
+    margin: 0 auto;
+    float: right;
+    margin-top: 2em;
+}
+
+section {
+    padding: 10em 1.5em 0 1.5em;
+
+    p{
+        font-size: .8em;
+        padding: 0em 2em 0em 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        position: relative;
+        margin-bottom: .5em;
+    }
+
+    .side-decor {
+        position: absolute;
+        height: 36px;
+        width: 5px;
+        left: 1px;
+        background-color: $green;
+        margin-top: 5px;
+    }
+
+    .form-wrapper {
+        display: grid;
+        text-align: left;
+        font-size: .8em;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        max-width: 380px;
+        margin: 0 auto;
+
+        .optional {
+            opacity: 50%;
+        }
+
+        input, textarea {
+            border: none;
+            background-color: darken($color: $blue, $amount: 1);
+            padding: 1em;
+            outline: none;
+            border-radius: 12px;
+            color: $textcolor;  
+            width: 90%;
+            margin-top: .8em;
+            resize: none;
+            transform: scale(1);
+            transition: transform 1s ease;
+            transition: border 2s ease;
+        }
+
+
+        input[type=text]:hover, textarea:hover{
+            border: 1px $green solid;
+            transition: border 1s ease;
+            outline: none;
+        }
+
+        input[type=text]:focus, textarea:focus{
+            outline: none;
+        }
+
+        button {
+            font-family: 'Montserrat', sans-serif;;
+            border: none;
+            padding: .8em;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $green;
+            color: $blue;
+            width: 100%;
+        }
+
+    }
+    
+}
+
+@include media ('>=200px'){
+
+}
+
+@include media('>=tablet'){
+
+    .bg-contact{
+        width: 380px; 
+    }
+
+    .bg-contact-btm{
+        opacity: 40%;
+        width: 180px;
+        margin: 0 auto;
+        float: right;
+    }
+
+    section {
+        padding-top: 14em;
+
+        p {
+            font-size: 1.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        .form-wrapper{
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            max-width: 460px;
+
+            textarea{
+                width: 95%;
+            }
+
+            button {
+                width: 240px;
+            }
+
+            .btn-wrapper{
+                justify-self: center;
+            }
+
+        }
+
+        .btn-wrapper, .msg-wrapper{
+            grid-column: 1 / 3;
+        }
+    }
+
+}
+
+@include media('>=desktop'){
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bg-contact{
+        width: 580px; 
+    }
+
+    .bg-contact-btm{
+        width: 250px;
+ 
+    }
+
+    section {
+        padding-top: 22em;
+
+        p {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 3em;
+        }
+
+        .form-wrapper{
+            max-width: 500px;
+
+            transform: scale(1.3);
+        }
+    }
+
+    .bg-contact{
+        top: 180px;
+    }
+
+    #nav {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+}
+
+@include media('>=1440px'){
+
+    .bg-contact {
+        opacity: 40%;
+        width: 580px;
+        margin: 0 auto;
+        float: right;
+        left: 55%;
+        margin-top: 2em;
+    }
+
+    .bg-contact-btm {
+        display: none;
+    }
+
+    .hide-mobile{
+        display: inline;
+    }
+
+    section {
+        text-align: left;
+        padding-top: 0;
+        margin-top: 6em;
+        
+        p{
+            padding-left: 0;
+        }
+
+        .form-wrapper{
+            float: left;
+            transform: scale(1.6);
+            margin-left: 5px;
+            justify-content: start;
+
+        }
+    }
+
+    .bg-contact-pc {
+        width: 380px;
+        opacity: 40%;
+        float: right;
+
+    }
+}
+
+@include media('>=1920px'){
+
+    .container {
+        width: 70%;
+    }
+
+    section {
+
+        .form-wrapper{
+            transform: scale(1.8);
+            margin-top: 2em;
+            margin-left: -2.2em;
+        
+
+            label {
+                font-size: .8em;
+            }
+
+            button{ 
+                margin-top: 1em;
+                width: 140px;
+                padding: .4em;
+                font-size: 1em;
+                border-radius: 10px;
+                cursor: pointer;
+                transform: scale(1);
+                transition: transform .8s ease;
+            }
+
+            input[type="text"]{
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .btn-wrapper{
+                justify-self: start;
+            }
+
+            button:hover {
+                transform: scale(1.1);
+                transition: transform .8s ease;
+            }
+        }
+    }
+}

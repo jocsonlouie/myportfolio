@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louie Jocson | Contact</title>
+    <script src="js/glide.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <div class="wrapper" id="wrap">
+        <div class="dank-ass-loader">
+            <div class="row">
+            <div class="arrow up outer outer-18"></div>
+            <div class="arrow down outer outer-17"></div>
+            <div class="arrow up outer outer-16"></div>
+            <div class="arrow down outer outer-15"></div>
+            <div class="arrow up outer outer-14"></div>
+            </div>
+            <div class="row">
+            <div class="arrow up outer outer-1"></div>
+            <div class="arrow down outer outer-2"></div>
+            <div class="arrow up inner inner-6"></div>
+            <div class="arrow down inner inner-5"></div>
+            <div class="arrow up inner inner-4"></div>
+            <div class="arrow down outer outer-13"></div>
+            <div class="arrow up outer outer-12"></div>
+            </div>
+            <div class="row">
+            <div class="arrow down outer outer-3"></div>
+            <div class="arrow up outer outer-4"></div>
+            <div class="arrow down inner inner-1"></div>
+            <div class="arrow up inner inner-2"></div>
+            <div class="arrow down inner inner-3"></div>
+            <div class="arrow up outer outer-11"></div>
+            <div class="arrow down outer outer-10"></div>
+            </div>
+            <div class="row">
+            <div class="arrow down outer outer-5"></div>
+            <div class="arrow up outer outer-6"></div>
+            <div class="arrow down outer outer-7"></div>
+            <div class="arrow up outer outer-8"></div>
+            <div class="arrow down outer outer-9"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <header>
+            <a href="index.html" class="flip wow animate__animated animate__fadeInDown animate__delay-1s"><img src="images/logo-green.svg" alt="mylogo" class="logo"></a>
+
+            <nav class="wow animate__animated animate__fadeInDown animate__delay-1s"> 
+                <ul id="nav">
+                    <li><a href="portfolio.html" class="project">portfolio</a></li>
+                    <li><a href="#" class="contact">#</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <img src="images/bg-contact.svg" alt="contact svg" class="bg-contact">
+        <section>
+            <p class="wow animate__animated animate__fadeIn animate__slower">Thank you for taking the time to reach out.</p>
+            <span class="side-decor wow animate__animated animate__fadeInLeft animate__slow animate__delay-2s"></span>
+            <h2 class="wow animate__animated animate__fadeInLeft animate__slow">How can I help you today? :)</h2>
+            <form> 
+                <div class="container">
+                    <div class="form-wrapper wow animate__animated animate__fadeIn animate__slower animate__delay-2s">
+
+                        <div class="name-wrappeer">
+                            <label for="input-name" id="lbl-name">Name:</label><br>
+                            <input type="text" name="name" id="input-name">
+                        </div>    
+
+                        <div class="email-wrapper">
+                            <label for="input-email" id="lbl-email">Email: <span class="optional">(optional)</span></label><br>
+                            <input type="text" name="name" id="input-email" >
+                        </div>
+
+                        <div class="msg-wrapper">
+                            <label for="name" id="lbl-msg">Message:</label><br>
+                            <textarea name="msg-area" id="" cols="30" rows="5"></textarea>
+                        </div>    
+
+                        <div class="btn-wrapper">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <img src="images/bg-contact-btm.svg" alt="contact svg" class="bg-contact-btm hide-desktop">
+        <img src="images/bg-contact-pc.svg" alt="contact svg" class="bg-contact-pc hide-mobile">
+
+    </div>
+
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script>
+         window.addEventListener("load", function(){
+               const preload = document.querySelector(".wrapper");
+               preload.classList.add("preload-finish");
+        });
+        new WOW().init();
+    </script>
+    
+</body>
+</html>
