@@ -38,6 +38,11 @@ html {
   display: flex;
 }
 
+hr {
+  border: 1px solid #aff68c;
+  width: 100px;
+}
+
 .arrow {
   width: 0;
   height: 0;
