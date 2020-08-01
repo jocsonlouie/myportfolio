@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.txt-simple {
+  color: $green;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
