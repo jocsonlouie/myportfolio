@@ -168,7 +168,6 @@ header {
 
     .project:hover {
       color: $green;
-      font-weight: bold;
       transition: color 0.2s ease-in;
     }
 
@@ -180,7 +179,6 @@ header {
 
       .contact {
         color: $green;
-        font-weight: bold;
       }
     }
 
@@ -578,7 +576,7 @@ section {
   }
 
   .logo {
-    width: 50px;
+    width: 65px;
   }
 
   .cream-holder {

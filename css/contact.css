@@ -296,7 +296,6 @@ header nav ul {
 
 header nav ul .project:hover {
   color: #aff68c;
-  font-weight: bold;
   -webkit-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
 }
@@ -310,7 +309,6 @@ header nav ul li {
 
 header nav ul li .contact {
   color: #aff68c;
-  font-weight: bold;
 }
 
 header nav ul li:last-child {
