@@ -741,3 +741,29 @@ section {
     }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .animation-wrapper {
+    margin-left: -20px;
+}
+
+}
+
+@media screen and (min-width: 2560px) {
+
+  .container{
+    width: 60%;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .mypics {
+    width: 18%;
+  }
+
+  .animation-wrapper{
+    margin-left: -19px;
+  }
+}

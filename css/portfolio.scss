@@ -647,3 +647,16 @@ section {
     width: 70%;
   }
 }
+
+
+@media screen and (min-width: 2560px) {
+
+  .container{
+    width: 60%;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+}

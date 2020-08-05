@@ -598,4 +598,13 @@ section .form-wrapper button {
     transition: transform .8s ease, -webkit-transform .8s ease;
   }
 }
+
+@media screen and (min-width: 2560px) {
+  .container {
+    width: 60%;
+  }
+  .logo {
+    width: 85px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */
