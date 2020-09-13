@@ -1,6 +1,1 @@
-<svg id="logo-blue" xmlns="http://www.w3.org/2000/svg" width="77.726" height="80.384" viewBox="0 0 77.726 80.384">
-  <path id="XMLID_10_" d="M155.328,131.167H166.3v-5.273h6.961V159.22H185.49v-7.8h5.273v13.077H166.3v7.382H185.49v1.055h5.273v7.446A35.39,35.39,0,1,0,149,125.894h6.328Z" transform="translate(-139.656 -107.227)" fill="none"/>
-  <rect id="XMLID_16_" width="1.687" height="28.053" transform="translate(26.64 23.94)" fill="none"/>
-  <path id="XMLID_17_" d="M255.467,201.522h-5.273v7.8H237.961V176H231v5.273h1.687v28.053H231V214.6h24.467Z" transform="translate(-204.36 -157.333)" fill="#003048"/>
-  <path id="Union_2" data-name="Union 2" d="M45.834,77.726V65.7h5.384v7.4A35.39,35.39,0,1,0,9.406,18.59h6.266v5.35H0A40.665,40.665,0,1,1,45.834,80.384Z" fill="#003048"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="logo-blue" width="77.726" height="80.384" viewBox="0 0 77.726 80.384"><path id="XMLID_10_" fill="none" d="M155.328,131.167H166.3v-5.273h6.961V159.22H185.49v-7.8h5.273v13.077H166.3v7.382H185.49v1.055h5.273v7.446A35.39,35.39,0,1,0,149,125.894h6.328Z" transform="translate(-139.656 -107.227)"/><rect id="XMLID_16_" width="1.687" height="28.053" fill="none" transform="translate(26.64 23.94)"/><path id="XMLID_17_" fill="#003048" d="M255.467,201.522h-5.273v7.8H237.961V176H231v5.273h1.687v28.053H231V214.6h24.467Z" transform="translate(-204.36 -157.333)"/><path id="Union_2" fill="#003048" d="M45.834,77.726V65.7h5.384v7.4A35.39,35.39,0,1,0,9.406,18.59h6.266v5.35H0A40.665,40.665,0,1,1,45.834,80.384Z" data-name="Union 2"/></svg>
